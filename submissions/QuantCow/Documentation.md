@@ -33,3 +33,6 @@ We also encountered problematic default y-axis behavior by ```matplotlib.pyplot`
 
 ## Task 1.2
 
+On initial examination, we understood this to be a single-mode approximation of the previous two-mode system. We used the same approach as before, but with a single mode, defining an effective hamiltonian of zeros, and obtaining the photon-loss operators from the given equations. We then used the ```dynamiqs``` library to calculate the *Fidelity*, simulate the system and plot the results.
+
+## Task 1.3
