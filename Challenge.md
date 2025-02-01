@@ -98,8 +98,8 @@ Using `dynamiqs`, simulate the time-evolution of this system with the following 
 
 ```math
 \begin{aligned}
-g_2 = 1.0
-\epsilon_d = -4
+g_2 = 1.0\\
+\epsilon_d = -4\\
 \kappa_b = 10
 \end{aligned}
 ```
