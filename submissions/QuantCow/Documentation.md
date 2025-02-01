@@ -35,4 +35,7 @@ We also encountered problematic default y-axis behavior by ```matplotlib.pyplot`
 
 On initial examination, we understood this to be a single-mode approximation of the previous two-mode system. We used the same approach as before, but with a single mode, defining an effective hamiltonian of zeros, and obtaining the photon-loss operators from the given equations. We then used the ```dynamiqs``` library to calculate the *Fidelity*, simulate the system and plot the results.
 
+We also looked at exponentially reducing Buffer Decay rates (kappa_b) and saw the fidelity decrease. We plotted this as well.
+
+
 ## Task 1.3
