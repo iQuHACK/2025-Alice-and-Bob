@@ -12,6 +12,13 @@ date: 2025-02-01
 
 # Notes
 
+## Problem 1
+
+### 1.2 Tasks
+![](../../../../../Supplemental%20Files/images/Pasted%20image%2020250201225004.png)
+Above is a graph of the fidelity over time with the original $k_{B}$.
+
+
 ## Problem 2
 We need to calc the below hamiltonian
 $$
