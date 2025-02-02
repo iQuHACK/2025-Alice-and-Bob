@@ -29,3 +29,5 @@ There are two big things I can do here to save on computational complexity.
 2. We have sines and cosines for operators, so it seems a good idea to use taylor and approximate it to $n$. In that case, we could make a graph of the accuracy of taylor as a function of $n$ for our current state.
 
 
+Single photon loss is modeled by the annihilation operator
+De-phasing is modeled by the number operator.
