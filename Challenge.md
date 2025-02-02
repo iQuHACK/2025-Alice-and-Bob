@@ -1,8 +1,8 @@
 # The Challenge
 
-The challenge is devided into different parts.
+The challenge is divided into different parts.
 
-Before takkling the challenge right away, please make sure that you have carefully read the tutorials.
+Before tackling the challenge right away, please make sure that you have carefully read the tutorials.
 
 > :warning: **General guidelines**:
 > 1. Always check your results. Do they make sense? If in doubt, ask your peers or some of the Alice & Bob team.
@@ -98,8 +98,8 @@ Using `dynamiqs`, simulate the time-evolution of this system with the following 
 
 ```math
 \begin{aligned}
-g_2 = 1.0
-\epsilon_d = -4
+g_2 = 1.0\\
+\epsilon_d = -4\\
 \kappa_b = 10
 \end{aligned}
 ```
@@ -117,9 +117,9 @@ Also plot the expectation value of the number of photons, as well as the photon 
 **Task 1.2: Comparison with eliminated buffer mode**
 
 Compare your result from Task 1.1 to the system where the buffer mode is adiabatically eliminated, in which the dynamics of the memory mode is given by:
-```math
-\frac{d \hat{\rho}_a}{d t} = \kappa_2 \mathcal{D}[\hat{a}^2 - \alpha^2](\hat{\rho}_a),
-```
+$$
+\frac{d \hat{\rho}_a}{d t} = \kappa_2 \mathcal{D}[\hat{a}^2 - \alpha^2](\hat{\rho}_a)
+$$
 with two-photon dissipation rate $\kappa_2 = 4|g_2|^2 / \kappa_b$ and cat amplitude $\alpha^2 = -\epsilon_d/g_2^*$.
 
 Compute the time-evolution of the fidelity between the time-evolved states computed with the two-mode system from Task 1.1. What do you observe if you lower $\kappa_b$?
@@ -128,10 +128,10 @@ Compute the time-evolution of the fidelity between the time-evolved states compu
 
 To fully control a cat qubit, we also need to be able to perform gates.
 
-**$Z(\theta)$-rotation**: In addition to the dissipative stabilization mechanism simulated in Task 1.1, find a Hamiltonian that performs a contiuous rotation around the $Z$-axis of the qubit, also called Zeno gate, (as a reminder: the cat states $\lvert \mathcal{C}_\alpha^ \pm \rangle$ define the logical $X$-eigenstates $\lvert\pm\rangle$). This additional Hamiltonian has the form: $\hat{H}_Z = \epsilon_Z^* \hat{O} + \epsilon_Z \hat{O}^\dagger$, where $\hat{O}$ is a bosonic operator.
+**$Z(\theta)$-rotation**: In addition to the dissipative stabilization mechanism simulated in Task 1.1, find a Hamiltonian that performs a continuous rotation around the $Z$-axis of the qubit, also called Zeno gate, (as a reminder: the cat states $\lvert \mathcal{C}_\alpha^ \pm \rangle$ define the logical $X$-eigenstates $\lvert\pm\rangle$). This additional Hamiltonian has the form: $\hat{H}_Z = \epsilon_Z^* \hat{O} + \epsilon_Z \hat{O}^\dagger$, where $\hat{O}$ is a bosonic operator.
 
 **a)** Simulate the time-evolution that maps $\lvert+\rangle$ to $\lvert-\rangle$ in a time $T_Z$, where $2T_Z$ is the time it takes to make a full rotation.
-The speed of rotation will depend on the strenght of the parameter $\epsilon_Z$ in the Hamiltonian $H_Z$ that generates the rotation.
+The speed of rotation will depend on the strength of the parameter $\epsilon_Z$ in the Hamiltonian $H_Z$ that generates the rotation.
 
 **b)** Optimize parameters: In a real-world scenario, also our memory mode is subject to losses of single photons. Let $\kappa_a$ be the single-photon loss rate of mode a.
 
@@ -163,21 +163,22 @@ For this, consider the Lindblad master equation:
 $$\frac{d \hat{\rho}}{dt} = \mathcal{L}[\hat{\rho}] = -i \left[\hat{H}, \hat{\rho}\right] + \kappa_b \mathcal{D}(\hat{b})[\hat{\rho}] +  \kappa_a \mathcal{D}(\hat{a})[\hat{\rho}]$$
 
 At the saddle point ($\varphi_\Sigma = \pi/2 + \epsilon(t)$, $\varphi_\Delta = \pi/2$) the Hamiltonian of the system in the lab frame is given by
-```math
+$$
 \begin{aligned}
 \hat{H} &= \hat{H}_0 + \hat{H}_{\mathrm{ATS}} + \hat{H}_d,\qquad \mathrm{with}\\
 \hat{H}_0 &= \omega_{a,0}\hat{a}^\dagger \hat{a} + \omega_{b,0} \hat{b}^\dagger \hat{b}\\ 
 \hat{H}_{ATS} &= -2 E_J \sin(\epsilon(t)) \sin(\hat{\varphi}) +2 \Delta E_J \cos(\epsilon(t)) \cos(\hat{\varphi}),\\
 \hat{H}_d &= 2 \epsilon_d \cos(\omega_d t) \left(\hat{b} +  \hat{b}^\dagger\right).
 \end{aligned}
-```
+$$
 
 Here, $\epsilon(t) = \epsilon_p \cos(\omega_p t)$.
 
 **Task 2.1: Lab frame simulation**
 
 Using `dynamiqs`, simulate the time-evolution of this system with the following parameters (taken [from this paper](https://arxiv.org/abs/2307.06617)):
-```math
+
+$$
 \begin{aligned}
 \omega_{a,0}/2\pi &= 5.26\; \mathrm{GHz}\\
 \omega_{b,0}/2\pi &= 7.70\; \mathrm{GHz}\\
@@ -190,7 +191,8 @@ E_J/h &= 42.76\; \mathrm{GHz}\\
 \epsilon_d/2\pi &= -3.815 \; \mathrm{MHz}\\
 \epsilon_p &= 0.122 \; \mathrm{rad}
 \end{aligned}
-```
+$$
+
 
 Starting from the vacuum in both modes, simulate the dynamics of this system for a time $T = X \; \mu \mathrm{s}$.
 Plot the evolution of the wigner function in mode a.
