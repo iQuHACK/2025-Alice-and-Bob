@@ -1,5 +1,5 @@
 # Noisy but Nice (Adam Godel, Jacky Lin, Felix Bagurskas Rubio, Ege Topkoc, Artemios Kayas)
-We had a great time working on the Alice & Bob challenge at iQuHACK 2025! Our code and documentation, as well as a short reflection of our experiences, can be found in the [Challenge.ipynb](https://github.com/adam-godel/2025-Alice-and-Bob/blob/main/Challenge.ipynb) Jupyter notebook. Our slides presentation can be found [here](https://docs.google.com/presentation/d/11sxBHB6MFSx5BH7zxZ23o3aZRl83dwnfjfeL56ac5fA/edit?usp=sharing).
+We had a great time working on the Alice & Bob challenge at iQuHACK 2025! Our code and documentation, as well as a short reflection of our experiences, can be found in the [Challenge.ipynb](https://github.com/adam-godel/2025-Alice-and-Bob/blob/main/submissions/Challenge.ipynb) Jupyter notebook. Our slides presentation can be found [here](https://docs.google.com/presentation/d/11sxBHB6MFSx5BH7zxZ23o3aZRl83dwnfjfeL56ac5fA/edit?usp=sharing).
 
 # Alice & Bob challenge at iQuHACK 2025
 
