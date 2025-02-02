@@ -11,6 +11,11 @@ In Task 1.1, we got started with the `dynamiqs` package to simulate the time-evo
 
 We initialized the system in a state where both the buffer and the memory were in the vacuum state. To perform the simulation, we used a Hilbert-space truncation of \( n_a = 20 \) and \( n_b = 5 \), representing the number of Fock states in modes \( a \) and \( b \), respectively. We simulated the dynamics of the system over a time period \( T = 4 \). During the simulation, we plotted the Wigner function of mode \( a \) to visualize the quantum state as it evolved over time. Also we plotted the expectation value of the number of photons and the photon number parity in the memory mode. These plots helped us understand the behavior and properties of the cat qubits under the given Hamiltonian and parameters.
 
+
+$$\frac{d \hat{\rho}}{dt} = \mathcal{L}[\hat{\rho}] = -i \left[\hat{H}, \hat{\rho}\right] + \kappa_b \mathcal{D}(\hat{b})[\hat{\rho}]$$
+
+Our system was defined by the above Linbald master equation.
+
 ## Task 1.2
 
 In Task 1.2, we continued with the `dynamiqs` package by simulating the time-evolution of a quantum system described by a two-photon exchange Hamiltonian and a buffer drive Hamiltonian, but with a focus on different initial conditions and parameters. We used the same parameters as in Task 1.1: \( g_2 = 1.0 \), \( \epsilon_d = -4 \), and \( \kappa_b = 10 \). This time, we experimented with different initial states and Hilbert-space truncations to observe how these changes affect the dynamics of the system. We initialized the system in various states, including coherent states and superposition states, to study their evolution. We also simulated the dynamics over the same time period \( T = 4 \) and plotted the Wigner function of mode \( a \) to visualize the quantum state as it evolved. Additionally, we plotted the expectation value of the number of photons and the photon number parity in the memory mode for these different initial conditions.
